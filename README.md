@@ -7,8 +7,6 @@ A responsive checkout page for the **SLIMGOVY** product with form validation and
 ## Project Structure
 
 
-## Project Structure
-
 <pre>
 slimgovy-checkout/
 │
@@ -88,5 +86,6 @@ slimgovy-checkout/
 - **Email**: `user@domain.com`  
 - **Name**: Alphabets and spaces only  
 - **Phone**: Minimum 7 digits  
+
 
 
