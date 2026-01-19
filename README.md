@@ -87,5 +87,11 @@ slimgovy-checkout/
 - **Name**: Alphabets and spaces only  
 - **Phone**: Minimum 7 digits  
 
+# SLIMGOVY Checkout Page
+
+🔗 **Live Demo:** https://slimgovy-checkout-page.netlify.app/
+
+A responsive checkout page for the SLIMGOVY product with form validation and payment processing UI.
+
 
 
