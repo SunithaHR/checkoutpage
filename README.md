@@ -30,7 +30,6 @@ slimgovy-checkout/
 ├── Rectangle.png
 └── payment.png
 
-
 ---
 
 ## Features
@@ -84,3 +83,4 @@ slimgovy-checkout/
 - **Email**: `user@domain.com`  
 - **Name**: Alphabets and spaces only  
 - **Phone**: Minimum 7 digits  
+
