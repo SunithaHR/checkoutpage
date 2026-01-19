@@ -7,28 +7,33 @@ A responsive checkout page for the **SLIMGOVY** product with form validation and
 ## Project Structure
 
 
+## Project Structure
+
+<pre>
 slimgovy-checkout/
 │
-├── index.html # Main HTML file
-├── style.css # Stylesheet
-├── script.js # JavaScript functionality
-├── README.md # This documentation file
-└── img/ # Image assets directory
-├── slimgovy 1.png
-├── Vector (1).png
-├── Frame 633849.png
-├── Group.png
-├── paypal.png
-├── visa.png
-├── mastercard.png
-├── americanexpress.png
-├── dcard.png
-├── placeorder.png
-├── norton.png
-├── secure.png
-├── secure icons.png
-├── Rectangle.png
-└── payment.png
+├── index.html           # Main HTML file
+├── style.css            # Stylesheet
+├── script.js            # JavaScript functionality
+├── README.md            # This documentation file
+└── img/                 # Image assets directory
+    ├── slimgovy 1.png
+    ├── Vector (1).png
+    ├── Frame 633849.png
+    ├── Group.png
+    ├── paypal.png
+    ├── visa.png
+    ├── mastercard.png
+    ├── americanexpress.png
+    ├── dcard.png
+    ├── placeorder.png
+    ├── norton.png
+    ├── secure.png
+    ├── secure icons.png
+    ├── Rectangle.png
+    └── payment.png
+</pre>
+
 
 ---
 
