@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIMGOVY Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the checkout page -->
+    <div class="container">
+        <!-- Left side containing main content -->
+        <div>
+            <!-- Header section with timer, product info, and features -->
+            <div class="header-banner">
+                <!-- Timer showing reservation time -->
+                <div class="timer-text">Your Order Is Reserved For 10:00</div>
+                
+                <!-- Product banner with image and description -->
+                <div class="product-banner">
+                    <div class="product-info">
+                        <div class=""><img src="img/slimgovy 1.png" /></div>
+                        <div class="product-text">
+                            <h1>SLIMGOVY</h1>
+                            <p><span class="text-green">Slim Calories.</span> Feel Great</p>
+                            <div class="stars"><img src="img/Vector (1).png" width="13" />★★★★★</div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/Frame 633849.png" alt="Fast Delivery" width="300" />
+                    </div>
+                </div>
+                
+                <!-- Features bar highlighting key benefits -->
+                <div class="features-bar">
+                    <div class="feature"><img src="img/Group.png" /> SECURE PAYMENT</div>
+                    <div class="feature"><img src="img/Group.png" /> 180 DAY WARRANTY</div>
+                    <div class="feature"><img src="img/Group.png" /> SINGLE PAYMENT</div>
+                </div>
+                
+                <!-- Guarantee text for customer assurance -->
+                <div class="guarantee-text">You are protected by our 180 days guarantee</div>
+            </div>
+
+            <!-- Main checkout form section -->
+            <div class="left-column">
+                <!-- Express checkout box with PayPal option -->
+                <div class="express-box">
+                    <div class="express-label">Express checkout</div>
+                    
+                    <button class="paypal-button">
+                        Pay with <img src="img/paypal.png" width="60">
+                    </button>
+                    
+                    <div class="or-label">OR</div>
+                </div>
+
+                <!-- Contact information section -->
+                <h2 class="section-title">Contact</h2>
+                
+                <!-- Email input field -->
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email*">
+                    <small class="error-text"></small>
+                </div>
+                
+                <!-- Full name input field -->
+                <div class="form-group">
+                    <input type="text" id="fullname" placeholder="Full Name*">
+                    <small class="error-text">
+                        Type your full name, without numbers or special characters.
+                    </small>
+                </div>
+                
+                <!-- Phone number input with country code selector -->
+                <div class="form-group">
+                    <div class="phone-input">
+                        <div class="flag-select" id="flagSelect">
+                            <!-- Selected flag display -->
+                            <div class="selected-flag">
+                                <img src="https://flagcdn.com/w20/in.png">
+                                <span>+91</span>
+                                <i class="arrow"></i>
+                            </div>
+                            
+                            <!-- Dropdown with flag options -->
+                            <div class="flag-options" id="flagOptions">
+                                <div data-country="in" data-dial="+91">
+                                    <img src="https://flagcdn.com/w20/in.png"> +91
+                                </div>
+                                <div data-country="us" data-dial="+1">
+                                    <img src="https://flagcdn.com/w20/us.png"> +1
+                                </div>
+                                <div data-country="gb" data-dial="+44">
+                                    <img src="https://flagcdn.com/w20/gb.png"> +44
+                                </div>
+                                <div data-country="au" data-dial="+61">
+                                    <img src="https://flagcdn.com/w20/au.png"> +61
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone number input -->
+                        <input type="tel" id="phone" placeholder="(201) 555-0123">
+                    </div>
+                    <small class="error-text"></small>
+                </div>
+
+                <!-- Delivery address section -->
+                <h2 class="section-title">Delivery</h2>
+                
+                <!-- Country selection dropdown -->
+                <div class="form-group">
+                    <select id="country">
+                        <option value="">Country*</option>
+                        <option>United States</option>
+                        <option>India</option>
+                        <option>United Kingdom</option>
+                    </select>
+                    <small class="error-text"></small>
+                </div>
+                
+                <!-- Address line 1 input -->
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Address*">
+                    <small class="error-text"></small>
+                </div>
+                
+                <!-- Address line 2 input (optional) -->
+                <div class="form-group">
+                    <input type="text" id="apartment" placeholder="Apartment, suite, etc. (optional)">
+                </div>
+                
+                <!-- Grouped address fields (zip, city, state) -->
+                <div class="address-group">
+                    <div class="form-group">
+                        <input type="text" id="zip" placeholder="Zip Code*">
+                        <small class="error-text"></small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="city" placeholder="City*">
+                        <small class="error-text"></small>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <input type="text" id="state" placeholder="State / Province*">
+                        <small class="error-text"></small>
+                    </div>
+                </div>
+                
+                <!-- Social proof notice -->
+                <div class="checkout-notice">
+                    👁 Another 24 people are currently checking out
+                </div>
+
+                <!-- Payment section -->
+                <div class="payment-section">
+                    <h2 class="section-title">Payment</h2>
+                    <p style="font-size: 13px; color: #666; margin-bottom: 15px;">All payments are secure and encrypted.</p>
+                    
+                    <!-- Credit card payment option -->
+                    <div class="payment-method active">
+                        <div class="payment-method-left">
+                            <input type="radio" name="payment" checked>
+                            <span>Credit card</span>
+                        </div>
+                        <div class="payment-icons">
+                            <div><img src="img\visa.png" width="40" /></div>
+                            <div><img src="img\mastercard.png" width="40" /></div>
+                            <div><img src="img\americanexpress.png" width="40" /></div>
+                            <div><img src="img\dcard.png" width="40" /></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Credit card form fields (shown when credit card is selected) -->
+                    <div class="card-fields">
+                        <div class="form-group">
+                            <input type="text" id="cardNumber" placeholder="Card number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="cardHolder" placeholder="Card holder name">
+                        </div>
+                        <div class="card-row">
+                            <div class="form-group">
+                                <input type="text" id="expiryDate" placeholder="Expiration date (MM/YY)">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="cvv" placeholder="CVV code">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Shipping insurance option -->
+                    <div class="shipping-insurance">
+                        <div class="insurance-header">
+                            <input type="checkbox" id="insurance">
+                            <label for="insurance" style="cursor: pointer;">
+                                <strong>Yes, I'd like to add shipping insurance to my order for $4.95!</strong>
+                            </label>
+                        </div>
+                        <div class="insurance-text">
+                            Get peace of mind with Shipping Insurance in the event your delivery is damaged, stolen, or lost during transit.
+                        </div>
+                    </div>
+                    
+                    <!-- Place order button -->
+                    <button class="place-order-btn" id="placeOrderBtn">
+                        <img src="img/placeorder.png" width="10" /> Place Order
+                    </button>
+                    
+                    <!-- PayPal payment option -->
+                    <div class="payment-method">
+                        <div class="payment-method-left">
+                            <input type="radio" name="payment">
+                            <span>PayPal</span>
+                        </div>
+                        <div style="font-weight: bold; color: #003087;">
+                            <img src="img/paypal.png" alt="PayPal" width="60" />
+                        </div>
+                    </div>
+                    
+                    <!-- Terms and conditions -->
+                    <div class="terms-text">
+                        By placing an order, you acknowledge that you have read and accept our
+                        <a href="#">Terms and Conditions</a>,
+                        <a href="#">Refund Policy</a>, and
+                        <a href="#">Privacy Policy</a>.
+                    </div>
+                    
+                    <!-- Security badges for trust signals -->
+                    <div class="security-badges">
+                        <div><img src="img/norton.png" width="60" /></div>
+                        <div><img src="img/secure.png" width="60" /></div>
+                        <div><img src="img/secure icons.png" width="60" /></div>
+                        <div><img src="img/Rectangle.png" width="60" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right column with order summary -->
+        <div class="right-column">
+            <!-- Order item display -->
+            <div class="order-item">
+                <div class="item-image">
+                    <div><img src="img/payment.png" width="60" /></div>
+                </div>
+                <div class="item-details">
+                    <div class="item-name">SLIMGOVY - 1 Bottle</div>
+                    <div class="item-price">$84</div>
+                </div>
+            </div>
+            
+            <!-- Order summary with pricing breakdown -->
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$84.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping costs</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>$84.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

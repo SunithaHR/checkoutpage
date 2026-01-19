@@ -1,0 +1,541 @@
+/* Reset all margins, paddings, and set box-sizing to border-box for consistent sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Main container grid layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 30px;
+}
+
+/* Header banner styling */
+.header-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Timer text styling */
+.timer-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Product banner with gradient background */
+.product-banner {
+    background: linear-gradient(135deg, #7b2d8e 0%, #c93d8f 100%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Product info section within banner */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Product text styling */
+.product-text h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 31.18px;
+    line-height: 31.21px;
+    text-transform: capitalize;
+    color: #F4F4F4;
+}
+
+.product-text p {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 13.86px;
+    line-height: 18.48px;
+}
+
+/* Star ratings styling */
+.stars {
+    color: #ffd700;
+    font-size: 14px;
+}
+
+/* Green text for highlighting */
+.text-green {
+    color: rgb(104, 219, 104);
+}
+
+/* Features bar with gradient */
+.features-bar {
+    background: linear-gradient(90deg, #4CAF50 0%, #45a049 100%);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+/* Individual feature item */
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Guarantee text styling */
+.guarantee-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+/* Left column (main form) styling */
+.left-column {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Express checkout box styling */
+.express-box {
+    position: relative;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    padding: 30px 20px 25px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+/* Express checkout label */
+.express-label {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #777;
+}
+
+/* PayPal button styling */
+.paypal-button {
+    width: 100%;
+    background: #FFC439;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* OR label styling */
+.or-label {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form input and select styling */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Focus state for form inputs */
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #7b2d8e;
+}
+
+/* Error text styling */
+.error-text {
+    font-size: 12px;
+    color: #ff4444;
+    margin-top: 4px;
+    display: none;
+}
+
+/* Input error state */
+.input-error {
+    border-color: #ff4444 !important;
+}
+
+/* Phone input container */
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+/* Country flag selector styling */
+.flag-select {
+    position: relative;
+    width: 95px;
+    font-size: 14px;
+}
+
+/* Selected flag display */
+.selected-flag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.selected-flag img {
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+/* Flag options dropdown */
+.flag-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: none;
+    z-index: 10;
+}
+
+/* Individual flag option */
+.flag-options div {
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.flag-options div:hover {
+    background: #f5f5f5;
+}
+
+.flag-options img {
+    width: 20px;
+    height: 14px;
+}
+
+/* Dropdown arrow styling */
+.arrow {
+    margin-left: auto;
+    border: solid #555;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+/* Address fields grid layout */
+.address-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Full width form group */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Checkout notice styling */
+.checkout-notice {
+    background: #e8f5e9;
+    border: 2px dashed #4CAF50;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #2e7d32;
+    font-size: 14px;
+}
+
+/* Payment section styling */
+.payment-section {
+    margin-top: 30px;
+}
+
+/* Payment method option styling */
+.payment-method {
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+/* Active payment method styling */
+.payment-method.active {
+    border-color: #2f6fed;
+    background: #f3f7ff;
+    box-shadow: inset 0 0 0 1px #2f6fed;
+}
+
+/* Left side of payment method */
+.payment-method-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-method-left span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Payment icons display */
+.payment-icons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Card fields section */
+.card-fields {
+    display: none;
+}
+
+/* Show card fields when credit card is active */
+.payment-method.active + .card-fields {
+    display: grid;
+}
+
+/* Card form row layout */
+.card-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+/* Shipping insurance option styling */
+.shipping-insurance {
+    border: 2px dashed #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.insurance-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.insurance-text {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Place order button styling */
+.place-order-btn {
+    background: #149DCA;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.place-order-btn:hover {
+    background: #00acc1;
+}
+
+/* Terms text styling */
+.terms-text {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.terms-text a {
+    color: #7b2d8e;
+    text-decoration: none;
+}
+
+/* Security badges styling */
+.security-badges {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Right column (order summary) styling */
+.right-column {
+    padding: 25px;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+/* Order item display */
+.order-item {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ACABBA;
+    margin-bottom: 20px;
+}
+
+/* Item image container */
+.item-image {
+    width: 60px;
+    height: 60px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+/* Item details styling */
+.item-details {
+    flex: 1;
+}
+
+.item-name {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #149DCA;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Order summary styling */
+.order-summary {
+    margin-bottom: 20px;
+}
+
+/* Summary row styling */
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Total row styling */
+.summary-row.total {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 15px;
+    border-top: 1px solid #ACABBA;
+}
+
+/* Custom radio button styling */
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 968px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .right-column {
+        position: static;
+    }
+    
+    .product-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
