@@ -84,3 +84,4 @@ slimgovy-checkout/
 - **Name**: Alphabets and spaces only  
 - **Phone**: Minimum 7 digits  
 
+
